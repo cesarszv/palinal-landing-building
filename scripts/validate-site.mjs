@@ -70,7 +70,7 @@ requireMatch(
 );
 requireMatch(
   html,
-  /<meta\s+name="description"\s+content="Pinturas industriales de alta tecnología para repintado automotriz, carrocería industrial y náutica\. Palinal Bolivia, próximamente\."/i,
+  /<meta\s+name="description"\s+content="Pinturas industriales de alta tecnología para repintado automotriz y carrocería industrial\. Palinal Bolivia, próximamente\."/i,
   "La descripción no coincide con el contenido aprobado.",
 );
 requireMatch(
@@ -100,7 +100,7 @@ const visibleText = body
 
 const requiredCopy = [
   "Próximamente",
-  "Pinturas industriales de alta tecnología para repintado automotriz, carrocería industrial y náutica.",
+  "Pinturas industriales de alta tecnología para repintado automotriz y carrocería industrial.",
   "Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia.",
   "sebastian@palinal.bo",
   "Santa Cruz de la Sierra, Bolivia",

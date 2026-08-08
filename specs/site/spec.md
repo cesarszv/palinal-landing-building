@@ -16,7 +16,7 @@ La referencia archivada concreta esta especificación. No debe reinterpretarse c
 
 - Marca principal: **Palinal Bolivia**.
 - Mensaje principal: **Próximamente**.
-- Descripción: **Pinturas industriales de alta tecnología para repintado automotriz, carrocería industrial y náutica.**
+- Descripción: **Pinturas industriales de alta tecnología para repintado automotriz y carrocería industrial.**
 - Producto: lata de pintura Palinal.
 - Identificación institucional: **Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia.**
 - Contacto: **sebastian@palinal.bo**.

@@ -8,7 +8,7 @@ Característica: Sitio temporal de Palinal Bolivia
     Dado que visito la página principal
     Entonces veo la marca "Palinal Bolivia"
     Y veo el mensaje "Próximamente"
-    Y veo la descripción "Pinturas industriales de alta tecnología para repintado automotriz, carrocería industrial y náutica."
+    Y veo la descripción "Pinturas industriales de alta tecnología para repintado automotriz y carrocería industrial."
     Y veo una lata de pintura Palinal
     Y veo "Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia."
     Y puedo escribir a "sebastian@palinal.bo"
