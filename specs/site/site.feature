@@ -11,7 +11,7 @@ Característica: Sitio temporal de Palinal Bolivia
     Y veo la descripción "Pinturas industriales de alta tecnología para repintado automotriz y carrocería industrial."
     Y veo una lata de pintura Palinal
     Y veo "Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia."
-    Y puedo escribir a "sebastian@palinal.bo"
+    Y puedo escribir a "sistemas@palinal.bo"
     Y veo la ubicación "Santa Cruz de la Sierra, Bolivia"
 
   Escenario: Conservar la composición original

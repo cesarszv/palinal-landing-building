@@ -19,7 +19,7 @@ La referencia archivada concreta esta especificación. No debe reinterpretarse c
 - Descripción: **Pinturas industriales de alta tecnología para repintado automotriz y carrocería industrial.**
 - Producto: lata de pintura Palinal.
 - Identificación institucional: **Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia.**
-- Contacto: **sebastian@palinal.bo**.
+- Contacto: **sistemas@palinal.bo**.
 - Ubicación: **Santa Cruz de la Sierra, Bolivia**.
 
 ## Composición

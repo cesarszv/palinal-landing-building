@@ -88,8 +88,8 @@ requireMatch(
 requireCount(html, /\sid="page-title"/gi, 1, 'Debe existir un único id="page-title".');
 requireMatch(
   html,
-  /href="mailto:sebastian@palinal\.bo"/i,
-  "El contacto no apunta a sebastian@palinal.bo.",
+  /href="mailto:sistemas@palinal\.bo"/i,
+  "El contacto no apunta a sistemas@palinal.bo.",
 );
 
 const body = html.match(/<body[\s\S]*?<\/body>/i)?.[0] ?? "";
@@ -102,7 +102,7 @@ const requiredCopy = [
   "Próximamente",
   "Pinturas industriales de alta tecnología para repintado automotriz y carrocería industrial.",
   "Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia.",
-  "sebastian@palinal.bo",
+  "sistemas@palinal.bo",
   "Santa Cruz de la Sierra, Bolivia",
 ];
 
@@ -133,7 +133,7 @@ const orderedFragments = [
   "Pinturas industriales de alta tecnología",
   'src="assets/palinal-lata.png"',
   "Inversiones y Desarrollos 3D (ID3D)",
-  'href="mailto:sebastian@palinal.bo"',
+  'href="mailto:sistemas@palinal.bo"',
 ];
 let previousPosition = -1;
 

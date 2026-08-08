@@ -65,6 +65,6 @@ Conserva `CNAME` y `.nojekyll` en la raíz. No se utiliza una acción de desplie
 - [ ] `npm run check` finaliza correctamente.
 - [ ] No hay desbordamiento horizontal desde 240 px ni con texto ampliado.
 - [ ] La composición sigue siendo vertical y centrada.
-- [ ] El email abre `mailto:sebastian@palinal.bo`.
+- [ ] El email abre `mailto:sistemas@palinal.bo`.
 - [ ] El contenido sigue accesible con movimiento reducido y navegación por teclado.
 - [ ] No hay errores de consola ni recursos locales con respuesta 404.
