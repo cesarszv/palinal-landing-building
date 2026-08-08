@@ -1,9 +1,42 @@
-Adjuntaré como referencia las páginas web oficiales de Palinal: **palinal.it, palinal.com y palinal.es**.
+# Sitio temporal de Palinal Bolivia
 
-Nosotros somos **Inversiones y Desarrollos 3D (ID3D)**, contamos con el dominio **palinal.bo** y somos **distribuidores oficiales de Palinal en Bolivia**.
+## Intención
 
-Por el momento, quiero desarrollar una página temporal del tipo **“Sitio en construcción / Próximamente”**, mientras se desarrolla la web definitiva de Palinal Bolivia.
+Inversiones y Desarrollos 3D (ID3D) cuenta con el dominio **palinal.bo** y es distribuidor oficial de Palinal en Bolivia.
 
-La página debe respetar la **identidad visual, los colores y la estética de Palinal**, tomando como referencia sus sitios web oficiales. Quiero un diseño muy limpio, elegante, moderno y visualmente cuidado.
+Mientras se desarrolla la web definitiva, el dominio debe mostrar una página temporal de tipo **“Próximamente”**. La página debe respetar la identidad visual, los colores y la estética de Palinal tomando como referencia sus sitios oficiales: **palinal.it, palinal.com y palinal.es**.
 
-De manera sutil y bien integrada en la composición, debe aparecer el **isotipo de ID3D**, acompañado de una indicación de que **Inversiones y Desarrollos 3D (ID3D) es distribuidor oficial de Palinal en Bolivia**. Esta presencia debe ser secundaria respecto a la marca Palinal, evitando competir visualmente con ella y manteniendo una apariencia institucional y premium.
+El resultado debe conservar el concepto, contenido, identidad visual y experiencia de la versión aprobada que se encuentra en:
+
+`archives/Palinal Bolivia Coming-Soon Page/Palinal Bolivia Proximamente.dc.html`
+
+La referencia archivada concreta esta especificación. No debe reinterpretarse como un nuevo diseño.
+
+## Contenido visible
+
+- Marca principal: **Palinal Bolivia**.
+- Mensaje principal: **Próximamente**.
+- Descripción: **Pinturas industriales de alta tecnología para repintado automotriz, carrocería industrial y náutica.**
+- Producto: lata de pintura Palinal.
+- Identificación institucional: **Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia.**
+- Contacto: **sebastian@palinal.bo**.
+- Ubicación: **Santa Cruz de la Sierra, Bolivia**.
+
+## Composición
+
+La composición debe ser limpia, elegante, moderna y centrada. En todos los tamaños de pantalla debe conservar el orden vertical de la referencia:
+
+1. Marca Palinal Bolivia.
+2. Mensaje “Próximamente” y descripción.
+3. Producto Palinal.
+4. Identificación secundaria de ID3D, contacto y ubicación.
+
+La presencia de ID3D debe ser sutil, institucional y secundaria respecto a Palinal.
+
+## Límites
+
+- No añadir slogans, llamadas a la acción, secciones, contenido ni funcionalidades que no aparezcan en esta especificación o en la referencia archivada.
+- No convertir la composición en un hero de dos columnas.
+- No añadir decoraciones que alteren el concepto aprobado, como halos alrededor del producto.
+- No depender de JavaScript para presentar el contenido.
+- Las mejoras técnicas deben limitarse a semántica, accesibilidad, responsive design, rendimiento, mantenibilidad, metadatos y validación.

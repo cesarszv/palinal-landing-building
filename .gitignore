@@ -1,6 +1,8 @@
 # Local design references and generated exports
+/.agents/
+/.opencode/
 /.thumbnail
 /archives/
+/node_modules/
 /reference/
 /*.zip
-

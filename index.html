@@ -1,93 +1,140 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
-<meta charset="utf-8">
-<title>Palinal Bolivia — Próximamente</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,800&display=swap" rel="stylesheet">
-<style>
-  html, body { margin:0; padding:0; background:#FBDD07; -webkit-font-smoothing:antialiased; }
-  * { box-sizing: border-box; }
-  a { color:#B4160F; text-decoration:none; }
-  a:hover { color:#E62318; }
-  @keyframes pal-sheen { 0% { transform: translate3d(-10%,-6%,0) scale(1); opacity:.55 } 50% { transform: translate3d(8%,5%,0) scale(1.2); opacity:.8 } 100% { transform: translate3d(-10%,-6%,0) scale(1); opacity:.55 } }
-  @keyframes pal-glow { 0% { transform: translate3d(10%,8%,0) scale(1.08) } 50% { transform: translate3d(-6%,-5%,0) scale(1) } 100% { transform: translate3d(10%,8%,0) scale(1.08) } }
-  @keyframes pal-grid { 0% { background-position: 0 0 } 100% { background-position: 260px -260px } }
-  @keyframes pal-rise { from { opacity:0; transform: translateY(16px) } to { opacity:1; transform:none } }
-  @keyframes pal-wipe { from { opacity:0; transform: scaleX(0) } to { opacity:1; transform: scaleX(1) } }
-  @keyframes pal-float { 0% { transform: translateY(0) } 50% { transform: translateY(-9px) } 100% { transform: translateY(0) } }
-  @keyframes pal-shadow { 0% { transform: scaleX(1); opacity:.28 } 50% { transform: scaleX(.9); opacity:.18 } 100% { transform: scaleX(1); opacity:.28 } }
-  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important } }
-</style>
-</helmet>
-<div style="position:relative;min-height:100svh;width:100%;overflow:hidden;background:linear-gradient(176deg,#FEE93B 0%,#FBDD07 46%,#F3CE00 100%);font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#2A2118;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(18px,6vh,72px) clamp(22px,6vw,64px);gap:clamp(10px,3.2vh,40px)">
+<!doctype html>
+<html lang="es-BO">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
 
-  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;overflow:hidden">
-    <div style="position:absolute;width:130vmax;height:130vmax;left:-34vmax;top:-52vmax;border-radius:50%;background:radial-gradient(circle at center, rgba(255,255,255,.62) 0%, rgba(255,255,255,0) 62%);animation:pal-sheen 30s ease-in-out infinite"></div>
-    <div style="position:absolute;width:105vmax;height:105vmax;right:-36vmax;bottom:-44vmax;border-radius:50%;background:radial-gradient(circle at center, rgba(230,35,24,.15) 0%, rgba(230,35,24,0) 62%);animation:pal-glow 38s ease-in-out infinite"></div>
-    <sc-if value="{{ showTexture }}" hint-placeholder-val="{{ true }}">
-      <div style="position:absolute;inset:-20%;opacity:.05;background-image:repeating-linear-gradient(-45deg,#8A1008 0 1px,rgba(0,0,0,0) 1px 26px);animation:pal-grid 30s linear infinite"></div>
-    </sc-if>
-    <div style="position:absolute;inset:clamp(12px,1.9vw,30px);border:1px solid rgba(138,16,8,.16)"></div>
-  </div>
+    <title>Palinal Bolivia — Próximamente</title>
+    <meta
+      name="description"
+      content="Pinturas industriales de alta tecnología para repintado automotriz, carrocería industrial y náutica. Palinal Bolivia, próximamente."
+    />
+    <meta name="theme-color" content="#fbdd07" />
+    <meta name="color-scheme" content="light" />
+    <meta name="robots" content="index, follow" />
 
-  <div style="position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(10px,3.2vh,34px);max-width:760px;width:100%">
+    <link rel="canonical" href="https://palinal.bo/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..800&amp;display=swap"
+    />
+    <link
+      rel="preload"
+      href="assets/palinal-wordmark.png"
+      as="image"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-    <div style="display:flex;flex-direction:column;align-items:center;gap:clamp(8px,1.4vh,16px);width:100%;animation:pal-rise 1s cubic-bezier(.19,.72,.26,1) both">
-      <img src="assets/palinal-wordmark.png" alt="Palinal" style="display:block;width:clamp(210px,min(42vw,50vh),440px);height:auto;flex:none">
-      <div style="display:flex;align-items:center;gap:clamp(10px,1.4vw,16px);width:clamp(210px,min(42vw,50vh),440px);max-width:100%">
-        <span style="flex:1;height:1px;background:linear-gradient(90deg,rgba(180,22,15,0) 0%,rgba(180,22,15,.45) 100%);animation:pal-wipe 1.1s cubic-bezier(.19,.72,.26,1) .35s both;transform-origin:right"></span>
-        <span style="font-size:clamp(10px,1.05vw,12.5px);font-weight:600;letter-spacing:.42em;text-indent:.42em;color:#B4160F;white-space:nowrap;animation:pal-rise .9s cubic-bezier(.19,.72,.26,1) .3s both">BOLIVIA</span>
-        <span style="flex:1;height:1px;background:linear-gradient(90deg,rgba(180,22,15,.45) 0%,rgba(180,22,15,0) 100%);animation:pal-wipe 1.1s cubic-bezier(.19,.72,.26,1) .35s both;transform-origin:left"></span>
+    <meta property="og:locale" content="es_BO" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Palinal Bolivia" />
+    <meta property="og:title" content="Palinal Bolivia — Próximamente" />
+    <meta
+      property="og:description"
+      content="Pinturas industriales de alta tecnología para repintado automotriz, carrocería industrial y náutica."
+    />
+    <meta property="og:url" content="https://palinal.bo/" />
+    <meta
+      property="og:image"
+      content="https://palinal.bo/assets/social-preview.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://palinal.bo/assets/social-preview.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Palinal Bolivia — Próximamente" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Palinal Bolivia — Próximamente" />
+    <meta
+      name="twitter:description"
+      content="Pinturas industriales de alta tecnología para repintado automotriz, carrocería industrial y náutica."
+    />
+    <meta
+      name="twitter:image"
+      content="https://palinal.bo/assets/social-preview.jpg"
+    />
+    <meta name="twitter:image:alt" content="Palinal Bolivia — Próximamente" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="background" aria-hidden="true">
+        <div class="background__sheen"></div>
+        <div class="background__glow"></div>
+        <div class="background__texture"></div>
+        <div class="background__frame"></div>
       </div>
-    </div>
 
-    <div style="display:flex;flex-direction:column;align-items:center;gap:clamp(8px,1.8vh,18px);animation:pal-rise 1s cubic-bezier(.19,.72,.26,1) .18s both">
-      <h1 style="margin:0;font-size:clamp(34px,min(7.4vw,9.6vh),80px);font-weight:800;letter-spacing:-.028em;line-height:.98;color:#D6190F;text-wrap:balance">Próximamente</h1>
-      <p style="margin:0;max-width:36ch;font-size:clamp(14.5px,1.5vw,19px);font-weight:300;line-height:1.6;color:#4A3A22;text-wrap:pretty">Pinturas industriales de alta tecnología para repintado automotriz y carrocería.</p>
-    </div>
+      <section class="content" aria-labelledby="page-title">
+        <header class="brand">
+          <img
+            class="brand__wordmark"
+            src="assets/palinal-wordmark.png"
+            width="940"
+            height="223"
+            alt="Palinal"
+            fetchpriority="high"
+          />
+          <div class="brand__country">
+            <span aria-hidden="true"></span>
+            <strong>Bolivia</strong>
+            <span aria-hidden="true"></span>
+          </div>
+        </header>
 
-    <sc-if value="{{ showProduct }}" hint-placeholder-val="{{ true }}">
-      <div style="position:relative;display:flex;flex-direction:column;align-items:center;margin-top:clamp(2px,1vh,10px);animation:pal-rise 1.1s cubic-bezier(.19,.72,.26,1) .34s both">
-        <img src="assets/palinal-lata.png" alt="Lata de pintura Palinal" style="display:block;height:clamp(96px,min(24vh,28vw),240px);width:auto;filter:drop-shadow(0 18px 26px rgba(90,60,0,.22));animation:pal-float 7s ease-in-out infinite">
-        <div aria-hidden="true" style="width:clamp(76px,16vh,190px);height:12px;margin-top:-4px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(96,62,0,.5) 0%,rgba(96,62,0,0) 70%);animation:pal-shadow 7s ease-in-out infinite"></div>
-      </div>
-    </sc-if>
+        <div class="message">
+          <h1 id="page-title">Próximamente</h1>
+          <p>
+            Pinturas industriales de alta tecnología para repintado automotriz,
+            carrocería industrial y náutica.
+          </p>
+        </div>
 
-  </div>
+        <div class="product">
+          <img
+            src="assets/palinal-lata.png"
+            width="285"
+            height="402"
+            alt="Lata de pintura Palinal"
+            decoding="async"
+          />
+          <div class="product__shadow" aria-hidden="true"></div>
+        </div>
+      </section>
 
-  <div style="position:relative;width:100%;max-width:760px;display:flex;flex-direction:column;align-items:center;gap:clamp(10px,2vh,20px);animation:pal-rise 1s cubic-bezier(.19,.72,.26,1) .5s both">
-    <div style="width:min(100%,260px);height:1px;background:rgba(90,60,0,.24)"></div>
-    <div style="display:flex;align-items:center;justify-content:center;gap:13px;flex-wrap:wrap;max-width:620px">
-      <img src="assets/id3d-isotype.png" alt="Inversiones y Desarrollos 3D" style="display:block;width:clamp(28px,3vw,34px);height:clamp(28px,3vw,34px);flex:none;transition:transform .5s cubic-bezier(.19,.72,.26,1)" style-hover="transform:rotate(-8deg) scale(1.08)">
-      <p style="margin:0;font-size:clamp(12px,1.1vw,14px);font-weight:600;line-height:1.5;color:#4A3A22;text-wrap:pretty">Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia.</p>
-    </div>
-    <div style="display:flex;align-items:center;justify-content:center;gap:8px 16px;flex-wrap:wrap;font-size:clamp(11.5px,1vw,13px);font-weight:400;color:rgba(74,58,34,.78)">
-      <a href="mailto:sebastian@palinal.bo" style="position:relative;color:#B4160F;padding-bottom:2px;border-bottom:1px solid rgba(180,22,15,.28);transition:border-color .3s ease,color .3s ease" style-hover="color:#E62318;border-bottom-color:#E62318">sebastian@palinal.bo</a>
-      <span style="width:3px;height:3px;border-radius:50%;background:rgba(74,58,34,.4);flex:none"></span>
-      <span>Santa Cruz de la Sierra, Bolivia</span>
-    </div>
-  </div>
-
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;showProduct&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contenido&quot;},&quot;showTexture&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Fondo&quot;}}">
-class Component extends DCLogic {
-  renderVals() {
-    return {
-      showProduct: this.props.showProduct ?? true,
-      showTexture: this.props.showTexture ?? true
-    };
-  }
-}
-</script>
-</body>
+      <footer class="distributor">
+        <div class="distributor__rule" aria-hidden="true"></div>
+        <div class="distributor__identity">
+          <img
+            src="assets/id3d-isotype.png"
+            width="128"
+            height="128"
+            alt=""
+            aria-hidden="true"
+            decoding="async"
+          />
+          <p>
+            Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal
+            en Bolivia.
+          </p>
+        </div>
+        <address class="distributor__contact">
+          <a href="mailto:sebastian@palinal.bo">sebastian@palinal.bo</a>
+          <span class="distributor__location">
+            <span class="distributor__dot" aria-hidden="true"></span>
+            <span>Santa Cruz de la Sierra, Bolivia</span>
+          </span>
+        </address>
+      </footer>
+    </main>
+  </body>
 </html>

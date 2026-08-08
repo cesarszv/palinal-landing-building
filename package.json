@@ -1,0 +1,12 @@
+{
+  "name": "palinal-bolivia-coming-soon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio temporal de Palinal Bolivia.",
+  "scripts": {
+    "check": "node scripts/validate-site.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
