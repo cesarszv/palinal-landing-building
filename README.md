@@ -4,6 +4,8 @@ Sitio estático de “Próximamente” para Palinal Bolivia. Inversiones y Desar
 
 La implementación conserva la composición y el contenido de la versión aprobada, sin runtime de producción, framework ni proceso de compilación.
 
+![Composición aprobada de la página temporal de Palinal Bolivia](docs/preview.webp)
+
 ## Vista local
 
 Desde la raíz de este repositorio:
@@ -34,6 +36,7 @@ La validación comprueba el HTML, contenido aprobado, recursos publicados, domin
 | `assets/` | Únicos recursos visuales publicados. |
 | `scripts/validate-site.mjs` | Controles del contrato y de la publicación. |
 | `specs/site/` | Intención, contrato técnico y escenarios verificables. |
+| `docs/` | Material de documentación; no forma parte de la composición publicada. |
 | `.github/workflows/check.yml` | Validación automática de cambios. |
 | `CNAME`, `robots.txt`, `sitemap.xml` | Configuración del dominio y descubrimiento. |
 
