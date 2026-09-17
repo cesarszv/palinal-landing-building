@@ -88,8 +88,13 @@ requireMatch(
 requireCount(html, /\sid="page-title"/gi, 1, 'Debe existir un único id="page-title".');
 requireMatch(
   html,
-  /href="mailto:sistemas@palinal\.bo"/i,
-  "El contacto no apunta a sistemas@palinal.bo.",
+  /href="mailto:cesarszv@palinal\.bo"/i,
+  "El contacto no apunta a cesarszv@palinal.bo.",
+);
+requireMatch(
+  html,
+  /<a\s+class="progress__link"\s+href="https:\/\/demo\.palinal\.bo\/"\s+target="_blank"\s+rel="noopener"/i,
+  "Falta el acceso a la demo en https://demo.palinal.bo/.",
 );
 
 const body = html.match(/<body[\s\S]*?<\/body>/i)?.[0] ?? "";
@@ -101,8 +106,9 @@ const visibleText = body
 const requiredCopy = [
   "Próximamente",
   "Pinturas industriales de alta tecnología para repintado automotriz y carrocería industrial.",
+  "Estamos desarrollando el sitio. Ver el avance (se abre en una pestaña nueva)",
   "Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia.",
-  "sistemas@palinal.bo",
+  "cesarszv@palinal.bo",
   "Santa Cruz de la Sierra, Bolivia",
 ];
 
@@ -131,9 +137,10 @@ const orderedFragments = [
   'src="assets/palinal-wordmark.png"',
   'id="page-title"',
   "Pinturas industriales de alta tecnología",
+  'href="https://demo.palinal.bo/"',
   'src="assets/palinal-lata.png"',
   "Inversiones y Desarrollos 3D (ID3D)",
-  'href="mailto:sistemas@palinal.bo"',
+  'href="mailto:cesarszv@palinal.bo"',
 ];
 let previousPosition = -1;
 

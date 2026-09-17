@@ -17,9 +17,10 @@ La referencia archivada concreta esta especificación. No debe reinterpretarse c
 - Marca principal: **Palinal Bolivia**.
 - Mensaje principal: **Próximamente**.
 - Descripción: **Pinturas industriales de alta tecnología para repintado automotriz y carrocería industrial.**
+- Acceso a la demo: línea discreta **Estamos desarrollando el sitio.** con el enlace **Ver el avance** hacia `https://demo.palinal.bo/`, abierto en una pestaña nueva. El enlace se subraya con una mano de pintura incompleta que indica el progreso; al apuntarlo o enfocarlo se completa y recibe una segunda mano más profunda. Sin insignias, iconos ni puntos de estado.
 - Producto: lata de pintura Palinal.
 - Identificación institucional: **Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia.**
-- Contacto: **sistemas@palinal.bo**.
+- Contacto: **cesarszv@palinal.bo**.
 - Ubicación: **Santa Cruz de la Sierra, Bolivia**.
 
 ## Composición
@@ -27,7 +28,7 @@ La referencia archivada concreta esta especificación. No debe reinterpretarse c
 La composición debe ser limpia, elegante, moderna y centrada. En todos los tamaños de pantalla debe conservar el orden vertical de la referencia:
 
 1. Marca Palinal Bolivia.
-2. Mensaje “Próximamente” y descripción.
+2. Mensaje “Próximamente”, descripción y acceso a la demo.
 3. Producto Palinal.
 4. Identificación secundaria de ID3D, contacto y ubicación.
 
@@ -35,7 +36,7 @@ La presencia de ID3D debe ser sutil, institucional y secundaria respecto a Palin
 
 ## Límites
 
-- No añadir slogans, llamadas a la acción, secciones, contenido ni funcionalidades que no aparezcan en esta especificación o en la referencia archivada.
+- No añadir slogans, llamadas a la acción, secciones, contenido ni funcionalidades que no aparezcan en esta especificación o en la referencia archivada. El acceso a la demo es la única excepción aprobada y debe mantenerse secundario respecto al mensaje principal.
 - No convertir la composición en un hero de dos columnas.
 - No añadir decoraciones que alteren el concepto aprobado, como halos alrededor del producto.
 - No depender de JavaScript para presentar el contenido.

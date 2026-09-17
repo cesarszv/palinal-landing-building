@@ -9,9 +9,10 @@ Característica: Sitio temporal de Palinal Bolivia
     Entonces veo la marca "Palinal Bolivia"
     Y veo el mensaje "Próximamente"
     Y veo la descripción "Pinturas industriales de alta tecnología para repintado automotriz y carrocería industrial."
+    Y veo "Estamos desarrollando el sitio." con el enlace "Ver el avance" hacia "https://demo.palinal.bo/"
     Y veo una lata de pintura Palinal
     Y veo "Inversiones y Desarrollos 3D (ID3D), distribuidor oficial de Palinal en Bolivia."
-    Y puedo escribir a "sistemas@palinal.bo"
+    Y puedo escribir a "cesarszv@palinal.bo"
     Y veo la ubicación "Santa Cruz de la Sierra, Bolivia"
 
   Escenario: Conservar la composición original
@@ -19,7 +20,8 @@ Característica: Sitio temporal de Palinal Bolivia
     Entonces el contenido mantiene una composición vertical y centrada
     Y Palinal conserva la jerarquía visual principal
     Y la identidad de ID3D conserva una jerarquía secundaria
-    Y no veo slogans, llamadas a la acción, halos ni secciones adicionales
+    Y el acceso a la demo conserva una jerarquía secundaria
+    Y no veo slogans, halos ni secciones adicionales
 
   Escenario: Funcionar sin runtime de producción
     Dado que el navegador solicita la página
