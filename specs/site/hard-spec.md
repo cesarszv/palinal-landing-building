@@ -55,4 +55,4 @@ Ante una diferencia, se debe cumplir `spec.md`. Cuando `spec.md` no detalle una 
 - Todos los recursos locales referenciados deben existir.
 - No deben existir en producción `script`, `x-dc`, `sc-if` ni dependencias del exportador original.
 - Los PNG que requieran transparencia deben conservar canal alfa.
-- Los chequeos automatizados deben ejecutarse mediante `npm run check`.
+- Los chequeos automatizados deben ejecutarse mediante `pnpm run check`.
